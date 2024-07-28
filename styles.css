@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
+    font-family: "Inter", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(./image/Headphones-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+}
+.hero-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    line-height: 48px;
+    font-size: 48px;
+    color: #292929;
+}
+.hero-content {
+    width: 100%;
+    max-width: 1260px;
+}
+@media (max-width: 568px){
+    .hero {
+        background: url(./image/img-mob.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-height: 720px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .hero-text {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+.section {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+}
+.title {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    line-height: 48px;
+    font-size: 48px;
+    color: #292929;
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+        line-height: 40px; 
+    }
+}
+@media (max-width: 568px) {
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+.recommended {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 30px;
+    flex-direction: column;
+}
+.recommended-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+@media (max-width: 1100px) {
+    .recommended-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .recommended-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.recommended-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.col-title, .col-price {
+    font-weight: bold;
+}
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 30px;
+}
+.products-title {
+    text-align: center;
+}
+.row-title {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 140%;
+    color: #292929;
+}
+.products-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+.products-images {
+    display: flex;
+    gap: 3%;
+    margin-bottom: 16px;
+}
+.imageBig {
+    width: 65%;
+}
+.imageSmall {
+    width: 32%;
+}
+.why {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.why-content {
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+@media (max-width: 768px) {
+    .why {
+        flex-direction: column;
+    }
+    .why-content {
+        max-width: 100%;
+    }
+}
+.footer {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+
+    background-image: url(./image/Footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+}
+ul li{
+    font-weight: bold;
+}
+ul li:not(:last-child) {
+    padding-bottom: 15px;
+}
